@@ -32,7 +32,7 @@ jobs:
         awsCredentials: 'aws-lambda'
         regionName: $(AWS_REGION)
         scriptType: 'inline'
-        inlineScript: |
+        inlineScript:
           serverless package -t $(CLOUDGUARD_TOKEN)
     displayName: 'Run Serverless package'
 
